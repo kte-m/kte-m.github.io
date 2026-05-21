@@ -1,0 +1,484 @@
+  <!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kompyuterni tashkil etish fani bo'yicha ta'limiy sayt — Bozarov F.S.">
+  <title>KTE | Kompyuterni tashkil etish</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="form-config.js"></script>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="header__inner container">
+      <a href="#bosh-sahifa" class="logo">
+        <img class="logo__icon" src="assets/logo.png" alt="KTE logo" style="width:36px; height:36px; max-width:36px; max-height:36px; object-fit:contain;">
+        <span class="logo__text">KTE</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Menyuni ochish" aria-expanded="false">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="nav" id="mainNav" aria-label="Asosiy menyu">
+        <ul class="nav__list">
+          <li><a href="#bosh-sahifa" class="nav__link">Bosh sahifa</a></li>
+          <li><a href="#muallif-haqida" class="nav__link">Muallif haqida</a></li>
+          <li><a href="#sillabus" class="nav__link">Sillabus</a></li>
+          <li><a href="#maruzalar" class="nav__link">Ma'ruzalar</a></li>
+          <li><a href="#amaliy-ishlar" class="nav__link">Amaliy ishlar</a></li>
+          <li><a href="#mustaqil-talim" class="nav__link">Mustaqil ta'lim</a></li>
+          <li><a href="#test-savollari" class="nav__link">Testlar</a></li>
+          <li><a href="#baholash" class="nav__link">Baholash</a></li>
+          <li><a href="#adabiyotlar" class="nav__link">Adabiyotlar</a></li>
+          <li><a href="#boglanish" class="nav__link">Bog'lanish</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="bosh-sahifa" class="hero section">
+      <div class="container hero__content">
+        <h1 class="hero__title">Kompyuterni tashkil etish</h1>
+        <p class="hero__subtitle">
+          Axborot tizimlari va texnologiyalari (moliya-bank tizimida) yo'nalishining
+          3-bosqich kunduzgi ta'lim oluvchi talabalari uchun elektron o'quv resurslari.
+        </p>
+      </div>
+    </section>
+
+    <section id="muallif-haqida" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Muallif haqida</h2>
+        <p class="section__lead">O'qituvchi haqida qisqacha ma'lumot</p>
+        <div class="card card--profile">
+          <div class="profile">
+            <div class="profile__avatar" aria-hidden="true">
+              <img src="assets/teacher-placeholder.svg" alt="" width="120" height="120">
+            </div>
+            <div class="profile__info">
+              <h3 class="profile__name">Bozarov Farxod Samadovich</h3>
+              <p class="profile__role">
+                Iqtisodiyot va pedagogika universiteti NTM «Kompyuter tizimlari» kafedrasi katta o'qituvchisi.
+              </p>
+              <p>
+                Ushbu sayt «Kompyuterni tashkil etish» fani bo'yicha ma'ruzalar, amaliy ishlar,
+                mustaqil ta'lim topshiriqlari va boshqa materiallarni talabalarga qulay taqdim etish uchun yaratilgan.
+              </p>
+              <ul class="profile__meta">
+                <li><strong>Qabul vaqti:</strong> Dushanba–Juma, 14:00–16:00.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sillabus" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Sillabus</h2>
+        <p class="section__lead">Fan bo'yicha o'quv reja va baholash tizimi</p>
+        <div class="card">
+          <table class="table" aria-label="Sillabus jadvali">
+            <thead>
+              <tr>
+                <th>Semestr</th>
+                <th>Soat (ma'ruza / amaliy / mustaqil ta'lim)</th>
+                <th>Kredit</th>
+                <th>Baholash</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>5-semestr</td>
+                <td>30 / 30 / 90</td>
+                <td>5</td>
+                <td>100 ballik tizim</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="card__actions">
+            <a href="pdf/ktesillabus.pdf?v=2" class="btn btn--primary" target="_blank" rel="noopener">PDF ni ochish</a>
+            <a href="pdf/ktesillabus.pdf?v=2" class="btn btn--secondary" download>Sillabusni yuklab olish</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="maruzalar" class="section">
+      <div class="container">
+        <h2 class="section__title">Ma'ruzalar</h2>
+        <p class="section__lead">15 ta ma'ruza uchun PDF materiallar</p>
+        <div class="grid grid--3" id="maruzaGrid"></div>
+      </div>
+    </section>
+
+    <section id="amaliy-ishlar" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Amaliy ishlar</h2>
+        <p class="section__lead">15 ta amaliy ishlar uchun PDF materiallar</p>
+        <div class="grid grid--3" id="amaliyGrid"></div>
+      </div>
+    </section>
+
+    <section id="mustaqil-talim" class="section">
+      <div class="container">
+        <h2 class="section__title">Mustaqil ta'lim</h2>
+        <p class="section__lead">Mustaqil ta'limni baholash topshiriqlari</p>
+
+        <p class="mustaqil-intro">
+          <strong>Mustaqil ta'limni baholash:</strong> Mustaqil ta'limni baholash berilgan topshiriqlar shakli va hajmidan kelib chiqib amalga oshiriladi. Mustaqil ta'lim bo'yicha talabalar bilimi joriy, oraliq va yakuniy nazoratlarda baholab boriladi.
+        </p>
+
+        <div class="card mustaqil-pdf-card">
+          <div class="card__actions">
+            <a
+              href="pdf/ktemustaqilta'lim.pdf"
+              class="btn btn--primary"
+              id="mustaqilOpenPdf"
+              target="_blank"
+              rel="noopener"
+            >Mustaqil ta'limni bajarish tartibi</a>
+            <a
+              href="pdf/ktemustaqilta'lim.pdf"
+              class="btn btn--secondary"
+              id="mustaqilDownloadPdf"
+              download="ktemustaqilta'lim.pdf"
+            >PDF ni yuklab olish</a>
+          </div>
+        </div>
+
+        <div class="table-wrapper card">
+          <table class="table table--mustaqil" aria-label="Mustaqil ta'lim topshiriqlari">
+            <thead>
+              <tr>
+                <th>№</th>
+                <th>Topshiriq mavzusi</th>
+                <th>Xona</th>
+                <th>Baholash mezonlari</th>
+                <th>Soat</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>MT1</td>
+                <td>Turli soxalar uchun mo'ljallangan komp'yuterlar va komp'yuter tizimlari;</td>
+                <td>2-bino 213-A-xona</td>
+                <td>Mavzu yuzasidan tahliliy ma'lumot (prezentatsiya) tayyorlash.</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>MT2</td>
+                <td>Hozirda ishlab chiqarilayotgan shaxsiy komp'yuterlarning prosessorlari va ularning xususiyatlari;</td>
+                <td>2-bino 213-A-xona</td>
+                <td>Berilgan mavzuni chuqur o'rganish va yuqori darajada tahlil qilish.</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>MT3</td>
+                <td>Mobil tizimlar uchun mo'ljallangan prosessorlar</td>
+                <td>2-bino 213-A-xona</td>
+                <td>Referatni bajarish.</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>MT4</td>
+                <td>O'rnatilgan tizimlarda qo'llaniladigan prosessorlar;</td>
+                <td>2-bino 213-A-xona</td>
+                <td>Berilgan mavzuni chuqur o'rganish va yuqori darajada tahlil qilish.</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>MT5</td>
+                <td>Zamonaviy komp'yuterlarning konfiguratsiyalari va ularni qo'llanish soxalari;</td>
+                <td>2-bino 213-A-xona</td>
+                <td>Berilgan mavzuni chuqur o'rganish va yuqori darajada tahlil qilish.</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>MT6</td>
+                <td>Komp'yuterlarni tashkil qilishning raqamli-mantiqiy asoslari;</td>
+                <td>2-bino 213-A-xona</td>
+                <td>Berilgan mavzuni chuqur o'rganish va yuqori darajada tahlil qilish.</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>MT7</td>
+                <td>Buyruqlar tizimi arxitekturalari;</td>
+                <td>2-bino 213-A-xona</td>
+                <td>Berilgan mavzuni chuqur o'rganish va yuqori darajada tahlil qilish.</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>MT8</td>
+                <td>Zamonaviy shinalarning xususiyatlari;</td>
+                <td>2-bino 213-A-xona</td>
+                <td>Berilgan mavzuni chuqur o'rganish va yuqori darajada tahlil qilish.</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>MT9</td>
+                <td>Xotira turlari va xususiyatlari;</td>
+                <td>2-bino 213-A-xona</td>
+                <td>Berilgan mavzuni chuqur o'rganish va yuqori darajada tahlil qilish.</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>MT10</td>
+                <td>Assembler tilida dasturlash asoslari;</td>
+                <td>2-bino 213-A-xona</td>
+                <td>Berilgan mavzuni chuqur o'rganish va yuqori darajada tahlil qilish.</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>MT11</td>
+                <td>Tashqi qurilmalarning turlari va vazifalari;</td>
+                <td>2-bino 213-A-xona</td>
+                <td>Berilgan mavzuni chuqur o'rganish va yuqori darajada tahlil qilish.</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>MT12</td>
+                <td>Intel va AMD prosessorlari;</td>
+                <td>2-bino 213-A-xona</td>
+                <td>Mavzu yuzasidan tahliliy ma'lumot (prezentatsiya) tayyorlash.</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>MT13</td>
+                <td>Kiritish-chiqarish tizimlarining tashkil etilishi;</td>
+                <td>2-bino 213-A-xona</td>
+                <td>Berilgan mavzuni chuqur o'rganish va yuqori darajada tahlil qilish.</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>MT14</td>
+                <td>Tizim interfeyslari, shinalarning tashkil etilishi;</td>
+                <td>2-bino 213-A-xona</td>
+                <td>Referatni bajarish.</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>MT15</td>
+                <td>Ma'lumotlar formatlari standartlari;</td>
+                <td>2-bino 213-A-xona</td>
+                <td>Berilgan mavzuni chuqur o'rganish va yuqori darajada tahlil qilish.</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>MT16</td>
+                <td>Prosessorlarning tuzilishi, prosessorlarning ichki registrlari;</td>
+                <td>2-bino 213-A-xona</td>
+                <td>Berilgan mavzuni chuqur o'rganish va yuqori darajada tahlil qilish.</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>MT17</td>
+                <td>Pentium sinfi prosessorlari;</td>
+                <td>2-bino 213-A-xona</td>
+                <td>Berilgan mavzuni chuqur o'rganish va yuqori darajada tahlil qilish.</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>MT18</td>
+                <td>Matrisali va vektorli prosessorlar;</td>
+                <td>2-bino 213-A-xona</td>
+                <td>Berilgan mavzuni chuqur o'rganish va yuqori darajada tahlil qilish.</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>MT19</td>
+                <td>Kiritish-chiqarish kanallari va prosessorlari;</td>
+                <td>2-bino 213-A-xona</td>
+                <td>Berilgan mavzuni chuqur o'rganish va yuqori darajada tahlil qilish.</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>MT20</td>
+                <td>RAID massivlar.</td>
+                <td>2-bino 213-A-xona</td>
+                <td>Berilgan mavzuni chuqur o'rganish va yuqori darajada tahlil qilish.</td>
+                <td>4</td>
+              </tr>
+              <tr class="table__total-row">
+                <td colspan="4"><strong>Jami:</strong></td>
+                <td><strong>90</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="test-savollari" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Test savollari</h2>
+        <p class="section__lead">Oraliq va yakuniy nazorat uchun testlar</p>
+        <div class="grid grid--2">
+          <article class="card">
+            <h3 class="card__title">Oraliq nazorati test savollari</h3>
+            <div class="card__actions">
+              <a href="pdf/test/kteoraliqtest.pdf?v=2" class="btn btn--primary" target="_blank" rel="noopener">PDF ni ochish</a>
+              <a href="pdf/test/kteoraliqtest.pdf?v=2" class="btn btn--secondary" download>Yuklab olish</a>
+            </div>
+          </article>
+          <article class="card">
+            <h3 class="card__title">Yakuniy nazorat test savollari</h3>
+            <div class="card__actions">
+              <a href="pdf/test/kteyakuniytest.pdf?v=2" class="btn btn--primary" target="_blank" rel="noopener">PDF ni ochish</a>
+              <a href="pdf/test/kteyakuniytest.pdf?v=2" class="btn btn--secondary" download>Yuklab olish</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="baholash" class="section">
+      <div class="container">
+        <h2 class="section__title">Baholash mezonlari</h2>
+        <div class="card baholash-card">
+          <div class="baholash-text">
+            <p>
+              Talabalar fananing nazariy-metodologik tushunchalarini to'liq egallashi, tahlil natijalarini to'g'ri aks ettirishi, o'rganilayotgan jarayonlarni mustaqil ravishda kuzatishi hamda joriy, oraliq va yakuniy nazorat turlarida berilgan topshiriq va mashqlarni bajarishi lozim.
+            </p>
+            <ol class="baholash-list">
+              <li>
+                <strong>Joriy va oraliq nazorat</strong> uchun maksimal umumiy ball <strong>50 ball</strong>ni tashkil etadi, tanlov (o'tish) bali <strong>30 ball</strong>. Ushbu nazoratlar (testlar, og'zaki yoki yozma savollar, kazuslar va boshqalar) mashg'ulot soatlari (ma'ruza, amaliy, laboratoriya va seminarlar) hamda mustaqil ta'lim soatlari taqsimotiga (<strong>40/60</strong> yoki <strong>50/50</strong> nisbatda) ko'ra tuziladi.
+              </li>
+              <li>
+                <strong>Yakuniy nazorat</strong> uchun maksimal ball <strong>50 ball</strong>ni tashkil etadi. Yakuniy nazorat topshiriqlari ham mashg'ulot va mustaqil ta'lim soatlari nisbatiga (<strong>40/60</strong> yoki <strong>50/50</strong>) asoslanadi.
+              </li>
+              <li>
+                Agar talaba joriy va oraliq nazoratlar bo'yicha umumiy ball <strong>30 balldan kam</strong> bo'lsa yoki sababsiz <strong>25% va undan ko'p</strong> dars soatlarini qoldirsa, u fandan chetlashtiriladi va yakuniy imtihonga kiritilmaydi. Yakuniy imtihonga qo'shilmagan, qatnashmagan yoki qoniqarsiz baho olgan (<strong>30 ball</strong> chegarasiga yetmagan) talaba akademik qarzdor hisoblanadi va belgilangan muddatlarda fanni qayta o'qishga majbur.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="adabiyotlar" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Foydalanilgan adabiyotlar</h2>
+        <p class="section__lead">Asosiy va qo'shimcha o'quv manbalari</p>
+        <div class="card bibliography-card">
+          <h3 class="bibliography-card__heading">Asosiy adabiyotlar</h3>
+          <ol class="bibliography">
+            <li>Qaxxorov A.A., Avazov Yu.Sh., Ruziyev U.A. Kompyuter tizimlari va tarmoqlari. Toshkent. Fan va texnologiyalar. 2019-356 b.</li>
+            <li>William Stallings. Computer organization and architecture. Designing for performance. Eleventh edition. Pearson Education, 2019.</li>
+            <li>Таненбаум Э., Остин Т. Архитектура компьютера. 6-е изд. — СПб.: Питер, 2013. — 816 с.</li>
+            <li>David Patterson John Hennessy. Computer Organization and Design. 5th Edition. 2017.</li>
+            <li>С.А.Орлов, Б.Я.Цилькер. Организация ЭВМ и систем: Учебник для вузов. 3-е изд. — СПб.: Питер, 2018. — 688 с.</li>
+          </ol>
+
+          <h3 class="bibliography-card__heading">Qo'shimcha adabiyotlar</h3>
+          <ol class="bibliography" start="6">
+            <li>Shuangbao Paul Wang. Computer Architecture and Organization: Fundamentals and Architecture Security. Springer; 1st ed. 2021 edition  352 p.</li>
+            <li>Соломенчук В.Г., Соломенчук П.В. Железо персональных компьютеров 2010. СПб.: БХВ Петербург, 2010.-448 с.</li>
+            <li>Юров В.И. Assembler. Учебник для вузов. 2-е изд. -СПб.: Питер, 2010.-637с.</li>
+            <li>Столингс У. Структурная организация и архитектура компьютерных систем. М.: Вильямс, 2002.- 896 с.</li>
+            <li>Бройдо В.Л. Вычислительные системы, сети и телекоммуникации - СПб.: Питер. 2003.</li>
+            <li>Хорошевский В.Г. Архитектура вычислительных систем. Учебное пособие. М.: Изд. МГТУ им. Н.Э.Баумана. 2008. – 534</li>
+            <li>S. S. Mirzaxalilov, S. B. Dovletova. Kompyuter tashkil etilishi. Uslubiy ko'rsatma. Muhammad Al-Xorazmiy nom. TATU. T. : Muxarrirlik nashr., 2020. - 16 b.</li>
+            <li>Бойко В.И. и др. Схемотехника электронных систем. Микропроцессоры и микроконтроллеры. — СПб.: БХВ-Петербург, 2004. — 464 с.</li>
+            <li>Белоусов А.И., Емельянов В.А., Турцевич А.С. Основы схемотехники микроэлектронных устройств. — М.: Техносфера, 2012.</li>
+            <li>Muhammad Ali Mazidi, Janice Gillspie Mazidi. The 8051 Microcontroller and Embedded Systems. — 2007.</li>
+            <li>Мусаев М.М. “Компьютер тизимлари ва тармоқлари”. Олий ўқув юртлари учун ўқув қўлланма. Тошкент - 2011. – 336-б.</li>
+          </ol>
+
+          <h3 class="bibliography-card__heading">Axborot manbalari</h3>
+          <ol class="bibliography bibliography--sources">
+            <li><a href="https://stepik.org/course/253/promo?auth=registration" target="_blank" rel="noopener">https://stepik.org/course/253/promo?auth=registration</a></li>
+            <li><a href="https://www.udemy.com/course/computer-architecture-an-introduction" target="_blank" rel="noopener">https://www.udemy.com/course/computer-architecture-an-introduction</a></li>
+            <li><a href="https://www.coursera.org/learn/comparch " target="_blank" rel="noopener">https://www.coursera.org/learn/comparch </a></li>
+            <li><a href="https://www.my-mooc.com/ru/mooc/arhitektura-evm-computer-architecture" target="_blank" rel="noopener">https://www.my-mooc.com/ru/mooc/arhitektura-evm-computer-architecture</a></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="boglanish" class="section">
+      <div class="container">
+        <h2 class="section__title">Bog'lanish</h2>
+        <p class="section__lead">Savollar va maslahat uchun murojaat qiling</p>
+        <div class="grid grid--2">
+          <div class="card">
+            <h3 class="card__title">Aloqa ma'lumotlari</h3>
+            <ul class="contact-list">
+              <li>
+                <span class="contact-list__label">Email</span>
+                <a href="mailto:teacherfeedback2@gmail.com">teacherfeedback2@gmail.com</a>
+              </li>
+              <li>
+                <span class="contact-list__label">Telefon</span>
+                <a href="tel:+998901234567">+998 xx xxx xx xx</a>
+              </li>
+              <li>
+                <span class="contact-list__label">Manzil</span>
+                <span>Qarshi shahri, I. Karimov ko‘chasi 13-uy</span>
+              </li>
+            </ul>
+          </div>
+          <form class="card card--form" id="contactForm" novalidate>
+            <h3 class="card__title">Xabar yuborish</h3>
+            
+            <label class="form__honeypot" aria-hidden="true">
+              <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+            </label>
+
+            <div class="form-status" id="formStatus" role="status" hidden></div>
+
+            <label class="form__field">
+              <span>Ismingiz</span>
+              <input type="text" name="name" id="contactName" required placeholder="Ism Familiya" autocomplete="name">
+            </label>
+            <label class="form__field">
+              <span>Email</span>
+              <input type="email" name="email" id="contactEmail" required placeholder="email@example.com" autocomplete="email">
+            </label>
+            <label class="form__field">
+              <span>Xabar</span>
+              <textarea name="message" id="contactMessage" rows="4" required placeholder="Savolingizni yozing..."></textarea>
+            </label>
+            <button type="submit" class="btn btn--primary" id="contactSubmitBtn">Yuborish</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; <span id="currentYear"></span> F.S.Bozarov. Kompyuterni tashkil etish. Barcha huquqlar himoyalangan.</p>
+      <p class="footer__note">Ta'limiy sayt</p>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Yuqoriga qaytish" hidden>↑</button>
+
+  <div
+    class="disclaimer-overlay"
+    id="welcomeDisclaimer"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="disclaimerTitle"
+    aria-describedby="disclaimerText"
+  >
+    <div class="disclaimer-dialog">
+      <h2 class="disclaimer-dialog__title" id="disclaimerTitle">Eslatma</h2>
+      <p class="disclaimer-dialog__text" id="disclaimerText">Diqqat! Ushbu veb sayt Kompyuterni tashkil etish fani bo'yicha Ta'lim yo'nalishi 60610200 - Axborot tizimlari va texnologiyalari (moliya-bank tizimida) uchun mo'ljallangan bo'lib unda mustaqil talim soatlari 90 soatni tashkil etadi. Saytdan foydalanishdan oldin ushbu ogohlantirish bilan tanishib chiqing. Davom etish uchun Ok tugmasini bosing.</p>
+      <button type="button" class="btn btn--primary disclaimer-dialog__ok" id="disclaimerOk">
+        Ok
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
