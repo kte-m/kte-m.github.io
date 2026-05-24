@@ -463,7 +463,7 @@
   function initMustaqilPdfLinks() {
     const openLink = document.getElementById("mustaqilOpenPdf");
     const downloadLink = document.getElementById("mustaqilDownloadPdf");
-    const path = "pdf/ktemustaqiltalim.pdf";
+    const path = "pdf/ktemustaqiltalim.pdf?v=5";
     const href = encodePdfPath(path);
 
     if (openLink) {
